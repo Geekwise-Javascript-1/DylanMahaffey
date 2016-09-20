@@ -1,0 +1,44 @@
+/*Universal*/
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-color: hsla(100, 30%, 60%, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav li {
+    display: inline-block;
+}
+nav li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 100%, .25);
+    margin-left: 10px;
+}
+
+/*Header*/
