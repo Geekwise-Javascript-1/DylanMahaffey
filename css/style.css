@@ -1,33 +1,33 @@
-/*Universal*/
+@import 'https://fonts.googleapis.com/css?family=Uncial+Antiqua';
 html, body {
     height: 100%;
 }
-
 body {
     margin: 0;
+    background-image: url(../img/cavern.jpg);
+    background-position: center bottom;
+    background-size: cover;
 }
-
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
 }
-
+h1 {
+    font-size: 26px;
+    font-family: 'Uncial Antiqua', cursive;
+}
 header {
     color: white;
     background-color: hsla(100, 30%, 60%, 1);
 }
-
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px 10px;
 }
-
 nav ul {
     display: flex;
     align-items: center;
-
 }
-
 nav li {
     display: inline-block;
 }
@@ -40,5 +40,118 @@ nav li a {
     background-color: hsla(0, 0%, 100%, .25);
     margin-left: 10px;
 }
+#table, #text {
+    width: 50%;
+    padding: 60px 0 30px;
+    float: left;
+}
+#table {
+    display: flex;
+    justify-content: center;
+}
+table {
+    background-color: hsla(0, 0%, 100%, .5);
+    box-shadow: 0 0 0 10px hsla(0, 0%, 100%, .5);
+    border-collapse: collapse;
+}
+table td {
+    box-sizing: border-box;
 
-/*Header*/
+}
+table td {
+    width: 3vw;
+    height: 3vw;
+    background-color: hsla(0, 0%, 0%, .75);
+}
+table td {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+table td.active {
+    background-color: white !important;
+}
+table td.exit {
+    background-color: red !important;
+}
+table td.visited {
+    background-color: hsla(0, 0%, 0%, .5);
+}
+table td.bt {
+    border-top-color: black;
+}
+table td.br {
+    border-right-color: black;
+}
+table td.bb {
+    border-bottom-color: black;
+}
+table td.bl {
+    border-left-color: black;
+}
+#text {
+}
+form {
+    width: 85%;
+    margin: 0 auto;
+}
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 0px 10px hsla(0, 0%, 100%, .5);
+}
+#hud {
+    clear: both;
+    display: flex;
+}
+#hud div {
+    flex: 1;
+}
+.inventory {
+    color: white;
+    text-align: center;
+}
+.inventory ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.inventory li {
+    padding: 5px 10px;
+    background-color: hsla(0, 0%, 9%, .75);
+    margin: 0 10px 10px 0;
+    list-style: none;
+    border: 1px solid white;
+}
+.nav span {
+    display: flex;
+    justify-content: center;
+}
+.nav span:nth-child(2){
+    background-image: url(../img/compass.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+}
+.nav button {
+    text-decoration: none;
+    color: black;
+    background-color: hsla(0, 0%, 90%, 1);
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.nav button:hover {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+.nav button:disabled {
+    color: hsla(0, 0%, 0%, .85);
+    background-color: hsla(0, 0%, 50%, .35);
+    border-color: hsla(0, 0%, 0%, .85);
+}

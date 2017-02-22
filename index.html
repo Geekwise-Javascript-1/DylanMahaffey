@@ -7,116 +7,58 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Arena</title>
 </head>
+
 <body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-    <header>
-
-        <nav>
-            <h1>dungeonScript</h1>
-
+<header>
+    <nav>
+        <h1>dungeonScript</h1>
+        <ul>
+            <li><a href="#">first link</a></li>
+            <li><a href="#">second link</a></li>
+            <li><a href="#">third link</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="table"></section>
+    <section id="text">
+        <form>
+            <textarea rows="5" placeholder="All your base are belong to us"></textarea>
+        </form>
+    </section>
+    <section id="hud">
+        <div class="inventory content">
+            <h4>Inventory:</h4>
             <ul>
-                <li><a href="#">first link</a></li>
-                <li><a href="#">second link</a></li>
-                <li><a href="#">third link</a></li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
             </ul>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <section id="table">
-            <table>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="text">
-            <form>
-                <textarea rows="5" placeholder="All your base are belong to us"></textarea>
-            </form>
-        </section>
-
-        <section id="hud">
-            <div class="content inventory">
-                <h4>Inventory:</h4>
-                <ul>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                </ul>
-            </div>
-            <div class="content nav">
-                <span><a id="n" href="#">north</a></span>
-                <span><a id="w" href="#">west</a><a id="e" href="#">east</a></span>
-                <span><a id="s" href="#">south</a></span>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Copyright &copy; dungeonScript. No rights reserved.</p>
-    </footer>
+        </div>
+        <div class="nav content">
+            <span><button id="n" type="button">north</button></span>
+            <span><button id="w" type="button">west</button><button id="e" type="button">east</button></span>
+            <span><button id="s" type="button">south</button></span>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Copyright &copy; dungeonScript. No rights reserved.</p>
+</footer>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
